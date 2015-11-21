@@ -1,3 +1,15 @@
+# Unresponsive but complete!
+
+I've technically succeeded in completing all of the challenges. Unfortunately, my design is still unresponsive to different resolutions. So 9 times out of 10, its going to look like crap. Hopefully we learn some tricks for that soon.
+
+## My own timer function
+
+One of the problems I was dealing with in this project was restarting my automatic switch/slide timer every time I clicked next or previous. (see Pro Mode). What I ended up doing was creating my own interval function: myInterval. This allowed me to set my own timer variable. At the beginning I set it to 0 so that it updates to the first slide automatically. Then, after every time time adjustList runs, the timer is reset to 10 seconds.
+
+## First time with json,ajax, and handlebars.
+
+This was my first real encounter with json, ajax, and handlebars. Honestly I had some trouble with handlebars, the syntax in the javascript confused me for a while, but after I tinkered with it for little while, I the rest of the pieces fell into place. json and ajax were rather simple, and I feel that I learned a lot about structuring my javascript file in the process.
+
 # Eta Weekend Challenge 02
 
 Hello Primers!

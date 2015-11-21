@@ -1,0 +1,78 @@
+body{
+	background-color:#ffbb99;
+}
+.people{
+	background-color:#ff5500;
+	width:80%;
+	margin:20px 10%;
+	float:left;
+}
+.peopleBox{
+	margin:0 7%;
+	padding:0 150px;
+}
+.currentPeople{
+	display:none;
+}
+.currentPictures{
+	display:none;
+}
+.movies{
+	background-color:#ff5500;
+	width:80%;
+	margin:20px 10%;
+	float:left;
+	border-radius:5px;
+}
+.movieBox {
+	width:50%;
+	background-color:#ff5500;
+}
+.selection{
+	margin-left:30px;
+	clear:both;
+	display:none;
+}
+.dot{
+	background-color:#993300;
+	margin:30px 10px;
+	height:10px;
+	width:10px;
+	border-radius:50%;
+	float:left;
+	display:inline;
+}
+p {
+	margin:4%;
+	padding:10px 20px;
+	float:left;
+	position:relative;
+	display:inline;
+}
+a {
+	margin:7%;
+	padding:10px 20px;
+	float:left;
+	position:relative;
+	display:inline;
+}
+img {
+	width:100px;
+	padding:10px 20px;
+	margin-left:4%;
+	float:left;
+	position:relative;
+	display:inline;
+}
+button {
+	position:absolute;
+	padding:15px;
+}
+.previous {
+	top:40px;
+	left:15%;
+}
+.next {
+	top:40px;
+	right:15%;
+}

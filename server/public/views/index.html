@@ -9,6 +9,41 @@
         <script type="text/javascript" src="/scripts/app.js"></script>
     </head>
     <body>
+        <div class="people">
+            <script id="person-list" type="text/x-handlebars-template">
+                <div class="peopleBox">
+                    {{#each people}}
+                        <div class="currentPeople">
+                            <p>{{firstName}}  {{lastName}}</p>
+                        </div>
+                    {{/each}}
+                    {{#each people}}
+                        <div class="currentPictures">
+                            <img src={{imageURL}}></img>
+                        </div>
+                    {{/each}}
+                    {{#each people}}
+                        <div class="currentPeople">
+                            <a href={{gitHubURL}}>Git Hub</a>
+                        </div>
+                    {{/each}}
+                </div>   
+            </script>
+        </div>
+        <div class="movies">
+            <script id="movies-list" type="text/x-handlebars-template">
+                <div class="movieBox">
+                    {{#each movies}}
+                        <div class="selection">
+                            <div class="dot"></div>
+                            <p>{{movieName}}:  {{releaseYear}}</p>
+                        </div>
+                    {{/each}}  
+                </div>
+            </script>
+        </div>
+        <button class="next">Next</button>
+        <button class="previous">Previous</button>
     </body>
 
 </html>
