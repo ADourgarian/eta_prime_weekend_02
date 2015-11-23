@@ -3,8 +3,8 @@ body{
 }
 .people{
 	background-color:#ff5500;
-	width:80%;
 	margin:20px 10%;
+	width:80%;
 	float:left;
 }
 .peopleBox{
@@ -56,13 +56,18 @@ a {
 	position:relative;
 	display:inline;
 }
-img {
-	width:100px;
-	padding:10px 20px;
-	margin-left:4%;
+.pictures{
+	background-color:#ff5500;
+	padding:0 30%;
+	margin:30px 20% 0 20%;
 	float:left;
-	position:relative;
-	display:inline;
+}
+img {
+	width:100%;
+	padding:10px 20px;
+}
+figcaption{
+	width:50px;
 }
 button {
 	position:absolute;

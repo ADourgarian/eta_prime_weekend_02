@@ -14,20 +14,22 @@
                 <div class="peopleBox">
                     {{#each people}}
                         <div class="currentPeople">
-                            <p>{{firstName}}  {{lastName}}</p>
-                        </div>
-                    {{/each}}
-                    {{#each people}}
-                        <div class="currentPictures">
-                            <img src={{imageURL}}></img>
-                        </div>
-                    {{/each}}
-                    {{#each people}}
-                        <div class="currentPeople">
-                            <a href={{gitHubURL}}>Git Hub</a>
+                            <p>{{firstName}}  {{lastName}}</p> 
                         </div>
                     {{/each}}
                 </div>   
+            </script>
+        </div>  
+        <div class="pictures">
+            <script id="picture-list" type="text/x-handlebars-template">
+                <div class="pictureBox">
+                    {{#each pictures}}
+                        <figure class="currentPictures">
+                            <img src={{imageURL}}></img>
+                            <figcaption>{{gitHubURL}}</figcaption> 
+                        </figure>
+                    {{/each}}
+                </div>
             </script>
         </div>
         <div class="movies">

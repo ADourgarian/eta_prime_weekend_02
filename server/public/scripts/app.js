@@ -45,26 +45,35 @@ $(document).ready(function() {
             //remove current names/movies and append new names/movies based on current counter
             function adjustList(){
                 var person = [];
+                var picture = [];
+                $('figure').remove();
                 $('p').parent().parent().remove();
 
                 person.push(json.eta[counter-1]);
                 person.push(json.eta[counter]);
                 person.push(json.eta[counter+1]);
 
-                person.slice(1,3);
-                console.log(person);
+                picture.push(json.eta[counter]);
 
+                person.slice(1,3);
+                picture.slice(0,2);
+                console.log(person);
+                console.log(picture);
                 var personList = $('#person-list').html();
                 var theTemplate = Handlebars.compile(personList);
                 var compiledHtml = theTemplate({people: person}); //append names
-
                 $(".people").append(compiledHtml);
+
+                var pictureList = $('#picture-list').html();
+                var theTemplate = Handlebars.compile(pictureList);
+                var compiledHtml = theTemplate({pictures: picture});
+                $(".pictures").append(compiledHtml);
+
                 var favorites = []
                 json.eta[counter].favoriteMovies.forEach(function(elem){
                     favorites.push(elem)
                 });
                 favorites.slice(0);
-                console.log(favorites);
 
                 var moviesList = $('#movies-list').html();
                 var theTemplate = Handlebars.compile(moviesList);
